@@ -1,0 +1,31 @@
+{
+  "name": "django-jwt-react",
+  "version": "1.0.0",
+  "description": "To learn how to merge React and Django",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "html-webpack-plugin": "^4.5.1",
+    "path": "^0.12.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
+  }
+}
