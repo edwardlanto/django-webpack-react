@@ -1,4 +1,7 @@
 const path = require('path');
+const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development",
@@ -17,6 +20,22 @@ module.exports = {
         // configuration regarding modules
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                
+                    {
+                        loader: 'style-loader',
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                        }
+                    },
+
+                ]
+            },
+            {
                 // regex test for js and jsx files
                 test: /\.(js|jsx)?$/,
                 // don't look in the node_modules/ folder
@@ -34,6 +53,8 @@ module.exports = {
             }
         ],
     },
+    plugins: [
+    ],
     devServer: {
         writeToDisk: true
     }

@@ -1,0 +1,50 @@
+{
+  "name": "django-jwt-react",
+  "version": "1.0.0",
+  "description": "To learn how to merge React and Django",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --config webpack.config.js build && tailwind build ./djsr/frontend/static/css/tailwind.css -o ./djsr/frontend/static/css/style.css && cleancss -o  ./djsr/frontend/static/css/style.min.css ./djsr/frontend/static/css/style.css",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "path": "^0.12.7",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.1",
+    "workbox-webpack-plugin": "^6.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "clean-css-cli": "^4.3.0",
+    "postcss": "^8.2.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardlanto/django-webpack-react.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/edwardlanto/django-webpack-react/issues"
+  },
+  "homepage": "https://github.com/edwardlanto/django-webpack-react#readme"
+}
